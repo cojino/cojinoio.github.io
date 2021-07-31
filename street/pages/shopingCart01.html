@@ -32,9 +32,23 @@
             <img src="/img/shoppingCart/visa.png" alt="visa">
             <p>Card Number</p>
             <input type="number" name="" id="credit">
-            <p>Expiry Date</p>
-            <input maxlength='5' placeholder="MM/YY" type="text" onkeyup="formatString(event);">
+            <div class="PP">
+                <p>Expiry Date</p>
+                <p>CVV</p>
+            </div>
+            <div class="myThingy">
+                <div class="give-me-color">
+                    <input id="card-sec" maxlength='5' placeholder="MM/YY" type="text" onkeyup="formatString(event);">
+                </div>
+                <div class="give-me-color">
+                    <input id="card-sec" maxlength='3' placeholder="CVV" type="text"">
+                </div>
+            </div>
+            <div class="final-bibi">
+                <button>Check Out</button>
+            </div>
         </div>
     </div>
+    <script src="/pages/shopingCart.js"></script>
 </body>
 </html>
